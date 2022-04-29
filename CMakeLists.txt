@@ -1,0 +1,34 @@
+add_executable(archiver
+        main.cpp
+        huffman/huffman.cpp
+        huffman/huffman.h
+        huffman/node.cpp
+        huffman/node.h
+        input/reader.cpp
+        input/reader.h
+        output/writer.cpp
+        output/writer.h
+        encoder.cpp
+        encoder.h
+        decoder.cpp
+        decoder.h
+        const/io.h
+        )
+
+add_catch(test_archiver
+        test.cpp
+        huffman/huffman.cpp
+        huffman/huffman.h
+        huffman/node.cpp
+        huffman/node.h
+        input/reader.cpp
+        input/reader.h
+        output/writer.cpp
+        output/writer.h
+        encoder.cpp
+        encoder.h
+        decoder.cpp
+        decoder.h
+        const/io.h
+        )
+
